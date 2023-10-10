@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+    <style>
+      /* Add your CSS styling here */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
+      select {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: white;
+        margin-right: 10px;
+      }
+      select:focus {
+        outline: none;
+      }
+      #choices {
+        margin-top: 20px;
+      }
+      #submit {
+        margin-top: 20px;
+      }
+      #add-item {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Vendor Dashboard</h1>
+    <div align="center">
+      <button onclick="yourItems()">Your Items</button>
+      <button onclick="addnewitem()">ADD NEW ITEM</button>
+      <button onclick="transaction()">TRANSACTION</button>
+      <button>LOGOUT</button>
+      <br><br>
+    </div>
+    <script>
+      function yourItems() {
+        document.getElementById("choices").innerHTML = `
+          <select id="item" name="item">
+            <option value="insert">INSERT</option>
+            <option value="delete">DELETE</option>
+          </select>
+          <br><br>
+        `;
+      }
+      function addnewitem() {
+        document.getElementById("choices").innerHTML = `
+          <select id="add" name="add">
+            <option value="productstatus">Product Status</option>
+            <option value="requestitem">Request Item</option>
+            <option value="viewproduct">View Product</option>
+          </select>
+          <br><br>
+        `;
+      }
+      function transaction() {
+        document.getElementById("choices").innerHTML = `
+          <select id="trans" name="trans">
+            <option value="userrequest">USER REQUEST</option>
+          </select>
+          <br><br>
+        `;
+      }
+    </script>
+  </body>
+</html>

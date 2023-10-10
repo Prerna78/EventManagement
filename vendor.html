@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vendor Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="vendorStyle.css">
+</head>
+<body>
+	<h1>Vendor Login</h1>
+	<div class="login-container" >
+		<form action="vendor_dashboard.html" method="post">
+            <div>
+            <input type="submit" value="CHART" align="left">
+            <input type="submit" value="BACK" align="right" onclick="location.href='index.html';"><a href="index.html"></a>
+            </div>
+            <label for="event" class="event" align="center" style="color:white;">Vendor Management System</label>
+			<label for="username" class="blue">UserId:</label>
+			<input type="text" id="username" name="username" Placeholder="VENDOR" class="event" required><br>
+			<label for="password" class="blue">Password:</label>
+			<input type="password" id="password" name="password" Placeholder="VENDOR" class="event" required><br>
+            <div>
+            <input type="submit" value="Cancel" align="left">
+			<input type="submit" value="Login" align="right">
+            </div>
+		</form>
+        
+	</div>
+    
+</body>
+</html>

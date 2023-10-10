@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.dashboard-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 2rem;
+			text-align: center;
+		}
+		button {
+			padding: 1rem 2rem;
+			margin-bottom: 1rem;
+			border: none;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 1.2rem;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="dashboard-container">
+		<h1>Maintenance Menu</h1>
+		<button><a href="add_update_memberships.html">Add/Update Memberships</a></button>
+        <button><a href="add_update_user.html">Add/Update User</a></button>
+        <button><a href="add_update_vendor.html">Add/Update Vendor</a></button>
+        <button><a href="users_management.html">Users Management</a></button>
+        <button><a href="vendor_management.html">Vendor Management</a></button>
+        <button><a href="add_membership_for_vendor.html">Add Membership for Vendor</a></button>
+        <button><a href="update_membership_for_vendor.html">Update Membership for Vendor</a></button>
+	</div>
+</body>
+</html>
